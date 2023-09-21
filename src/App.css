@@ -1,76 +1,82 @@
-.App {
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: white;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 400px;
+  border: 4px solid navy;
+  border-radius: 8px;
+  margin: 16px;
+  padding: 16px;
+  background-color: white;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-content {
+  margin-top: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-title {
+  margin: 16px;
+  text-align: center;
 }
-.color {
-  background-color: red;
+
+.description {
+  margin: 4px;
 }
-body {
-  background-color: lightgreen;
-  
+
+.description-toggle {
+  cursor: pointer;
 }
-.card { 
-  border-style: solid;
-  border-width: 3px;
-  border-color: green;
-  border-radius: 10px;
-  width: 450px;
+
+.toggle-button {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  border: 4px solid black;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: black;
+  background-color: lightblue;
 }
-img {
-  margin: 25px;
-  width: 400px;
-  height: auto;
+.details-link {
+  display: none;
+  margin-top: 16px;
+  text-align: center;
 }
-.btn-wrapper {
-  margin: 24px;
+
+.bg-toggle {
+  background-color: darkgray;
 }
-.btn-wrapper button {
-  font-size: 24px;
-  color: green;
-  background-color: white;
+
+.toggle-button:hover,
+.toggle-button:focus {
+  background-color: lightgray;
+  color: black;
 }
-.btn-wrapper button:hover {
-  color: white;
-  background-color: green;
+
+.hidden {
+  display: none;
 }
-.header {
-  font-size: 20px;
-  margin: 25px;
-}
-.paragraph {
-  font-size: 20px;
-  margin: 25px;
-}
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 800px) {
+  .button-details {
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
